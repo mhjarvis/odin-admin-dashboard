@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+}
+
+.container {
+    display: grid;
+}
+
+.side-bar-left {
+    background-color: aqua;
+}
+
+.search-section {
+    background-color: brown;
+}
+
+.projects-section {
+    background-color: pink;
+}
+
+.dates-section {
+    background-color: red;
+}
+
+.side-bara-right {
+    background-color: green;
+}
