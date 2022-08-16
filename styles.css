@@ -76,13 +76,18 @@ body {
 /* Section Left */
 
 .dashboard-name {
-
+    height: 20%;
 }
 
 .dashboard-nav {
-
+    height: 60%;
+    list-style-type: none;
 }
 
 .github {
-    
+    height: 20%;
+}
+
+.github img {
+    height: 70%;
 }
