@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    font-family: ;
 }
 
 :root {
@@ -77,11 +79,31 @@ body {
 
 .dashboard-name {
     height: 20%;
+    display: flex;
+    align-items: center;
+    color: var(--darkBlue);
+    font-weight: 800;
 }
 
 .dashboard-nav {
     height: 60%;
+    border: 1px solid;
+}
+
+.dashboard-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.dashboard-nav li {
     list-style-type: none;
+    border: 1px solid;
+
+
 }
 
 .github {
