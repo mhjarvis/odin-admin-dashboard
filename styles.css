@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    /* border: 1px solid; */
 }
 
 :root {
@@ -21,7 +22,7 @@ body {
     height: 100vh;
     width: 100%;
     background-color: var(--darkGreen);
-    color: white;
+    color: black;
     font-family: r;
 }
 
@@ -47,7 +48,7 @@ body {
 
 .left-section {
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
+    grid-row: 2 / 4;
     display: flex;
     flex-direction: column;
     max-width: 250px;
@@ -55,9 +56,11 @@ body {
 }
 
 .search-section {
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
-    border-bottom: 2px solid var(--whiteish);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .projects-section {
@@ -73,23 +76,11 @@ body {
 
 .side-bar-right {
     grid-column: 3 / 4;
-    grid-row: 1 / 4;
+    grid-row: 2 / 4;
     border-left: 2px solid var(--whiteish);
 }
 
 /* Section Left */
-
-.dashboard-name {
-    height: 70%;
-    max-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex;
-    font-weight: 900;
-    font-size: 2.5rem;
-    margin-top: 20%;
-}
 
 .dashboard-nav {
     display: flex;
@@ -115,6 +106,7 @@ body {
 .nav-container p {
     margin-left: 20px;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .home-nav {
@@ -132,4 +124,75 @@ body {
 .git-image {
     max-height: 100px
 }
+
+/* Search Box Section */
+
+.dashboard-name {
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin: 0 5%;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 150px 10px 20px;
+    background-color: #a2e7bc;
+    border-radius: 20px;
+}
+
+.search-box img {
+    height: 24px;
+    margin-right: 20px;
+}
+
+.search-box p {
+    font-size: 1.2rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.language p {
+    font-size: 1.4rem;
+    margin-right: 20%;
+}
+
+.language img {
+    height: 18px;
+}
+
+.notification-img {
+    height: 28px;
+    margin-left: 20px;
+}
+
+.profile-img {
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+
+/* Projects Section */
 
