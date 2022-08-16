@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: ;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 :root {
@@ -20,6 +23,7 @@ body {
     width: 100%;
     background-color: var(--darkGreen);
     color: white;
+    font-family: r;
 }
 
 .box {
@@ -50,6 +54,7 @@ body {
     border-right: 2px solid var(--whiteish);
     display: flex;
     flex-direction: column;
+    max-width: 250px;
 }
 
 .search-section {
@@ -81,33 +86,58 @@ body {
     height: 20%;
     display: flex;
     align-items: center;
-    color: var(--darkBlue);
-    font-weight: 800;
+    color: var(--whiteish);
+    font-weight: 900;
+    font-size: 2.5rem;
 }
 
 .dashboard-nav {
-    height: 60%;
-    border: 1px solid;
+    display: flex;
+    height: 70%;
+    padding: 0%;
+}
+
+.dashboard-images {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
 }
 
 .dashboard-ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px
 }
 
-.dashboard-nav li {
+.dashboard-ul li {
     list-style-type: none;
-    border: 1px solid;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--whiteish);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-
+.dashboard-ul #selected {
+    border-bottom: 3px solid var(--whiteish);
 }
 
 .github {
     height: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .github img {
