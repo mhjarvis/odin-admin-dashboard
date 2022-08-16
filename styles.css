@@ -8,26 +8,42 @@ body {
     background-color: gray;
 }
 
+.box {
+    text-align: center;
+}
+
 .container {
     display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
 }
 
 .side-bar-left {
     background-color: aqua;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
 }
 
 .search-section {
     background-color: brown;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .projects-section {
     background-color: pink;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .dates-section {
     background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
 
-.side-bara-right {
+.side-bar-right {
     background-color: green;
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
 }
