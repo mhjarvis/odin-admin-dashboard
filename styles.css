@@ -8,11 +8,11 @@
 }
 
 :root {
-    --brightGreen: #5cdb95;
-    --dullGreen: #8ee4af;
-    --darkGreen: #379683;
-    --whiteish: #edf5e1;
-    --darkBlue: #05386b;
+    --color-lvl-one: #edfafd;
+    --color-lvl-two: #aed9da;
+    --color-lvl-three: #3ddad8;
+    --color-lvl-four: #2a93d5;
+    --color-lvl-five: #2a93d5;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-color: var(--darkGreen);
+    background-color: var(--color-lvl-one);
     color: black;
     font-family: 'Roboto';
 }
@@ -32,7 +32,7 @@ body {
     justify-content: center;
     font-size: 2rem;
     border-radius: 20px;
-    background-color: var(--dullGreen);
+    background-color: var(--color-lvl-three);
 }
 
 .container {
@@ -42,8 +42,8 @@ body {
     grid-template-columns: 2fr 5fr 3fr;
     grid-template-rows: 1fr 2fr 2fr;
     gap: 10px;
-    border: 2px solid var(--whiteish);
-    background-color: var(--dullGreen);
+    border: 2px solid var(--color-lvl-one);
+    background-color: var(--color-lvl-three);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -65,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-bottom: 1px solid var(--whiteish);
+    border-bottom: 1px solid var(--color-lvl-one);
 }
 
 .dates-section {
@@ -76,7 +76,7 @@ body {
 .side-bar-right {
     grid-column: 3 / 4;
     grid-row: 2 / 4;
-    border-left: 2px solid var(--whiteish);
+    border-left: 2px solid var(--color-lvl-one);
 }
 
 /* Section Left */
@@ -146,7 +146,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px 150px 10px 20px;
-    background-color: #a2e7bc;
+    background-color: #6decea;
+    color: black;
     border-radius: 20px;
 }
 
@@ -191,6 +192,7 @@ body {
     border-radius: 50%;
     margin-right: 40px;
     margin-left: 50px;
+    border: 2px solid black;
 }
 
 /* Projects Section */
@@ -198,7 +200,7 @@ body {
 .projects-section {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    border-bottom: 2px solid var(--whiteish);
+    border-bottom: 2px solid var(--color-lvl-one);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -208,15 +210,46 @@ body {
 }
 
 .top {
-    background-color: blue;
     height: 25%;
     width: 100%;
 }
 
+.top h2 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.likes-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+.likes-container p {
+    margin-right: 10px;
+}
+
 .bottom {
-    background-color: green;
     height: 75%;
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bottom div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom div img {
+    width:80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 
