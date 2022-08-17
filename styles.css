@@ -32,7 +32,7 @@ body {
     justify-content: center;
     font-size: 2rem;
     border-radius: 20px;
-    background-color: var(--color-lvl-three);
+
 }
 
 .container {
@@ -43,8 +43,9 @@ body {
     grid-template-rows: 1fr 2fr 2fr;
     gap: 10px;
     border: 2px solid var(--color-lvl-one);
-    background-color: var(--color-lvl-three);
-    border-top-left-radius: 20px;
+    background:linear-gradient(#b0d2d1, #1ddedb);
+/*     background-color: var(--color-lvl-three);
+ */    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -240,16 +241,25 @@ body {
 
 .bottom div {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-e;
+    height: 100%;
 }
 
 .bottom div img {
-    width:80%;
+    width: 80%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+}
+
+.bottom div p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-weight: 600;
 }
 
 /* 
