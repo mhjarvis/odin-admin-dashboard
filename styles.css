@@ -41,7 +41,7 @@ body {
     grid-template-columns: 2fr 5fr 3fr;
     grid-template-rows: 1fr 2fr 2fr;
     border: 2px solid var(--color-lvl-one);
-    background:linear-gradient(#b0d2d1, #9deceb, #078280);
+    background:linear-gradient(#def7f6, #9deceb, #22a2a0);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -241,6 +241,7 @@ body {
 .projects-container {
     border-radius: 20px;
     height: 98%;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
@@ -265,31 +266,36 @@ body {
 
 .likes-container p {
     margin-right: 10px;
+    margin-top: 1%;
+    color: white;
+    font-weight: 700;
 }
 
 .bottom {
     height: 75%;
     width: 100%;
     display: flex;
-    align-items: center;
-    
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .bottom>div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: ;
-    height: 100%;
-    
+    justify-content: center;
+    height: 100%;    
 }
 
 .bottom>div>img {
-    width: 80%;
-    height: auto;
+    --var-width: 70%;
+    width: var(--var-width);
+    height: calc(1*var(--var-width));
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 10px 35px #35444d;
 }
 
 .bottom>div>p {
@@ -412,13 +418,14 @@ body {
 }
 
 .dates-header>p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     margin-right: 5%;
     color: white;
+    font-weight: 600
 
 }
 
